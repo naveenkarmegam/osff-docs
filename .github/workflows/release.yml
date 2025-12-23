@@ -1,34 +1,31 @@
 name: Release
 
 on:
-  workflow_dispatch:
-    inputs:
-      releaseType:
-        description: "patch | minor | major"
-        required: true
-        default: "patch"
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write
 
 jobs:
   release:
+    if: github.repository == 'naveenkarmegam/osff-docs'
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        uses: yyx990803/release-tag@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          fetch-depth: 0
+          tag_name: ${{ github.ref_name }}
+          body: |
+            📘 **OSFF Documentation Release**
 
-      - uses: pnpm/action-setup@v3
-        with:
-          version: 9
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: pnpm
-
-      - run: pnpm install
-      - run: pnpm release ${{ inputs.releaseType }}
-
-      - name: Push changes
-        run: |
-          git push origin main --tags
+            Please refer to [CHANGELOG.md](
+            https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md
+            ) for full details.
