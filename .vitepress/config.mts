@@ -8,6 +8,7 @@ export default defineConfig({
   cleanUrls: true,
   description: 'Dual runtime for Node.js',
   // base: '/osff-documentation/',
+  base: '/osff-docs/',
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
