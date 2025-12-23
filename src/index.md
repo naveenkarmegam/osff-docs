@@ -3,9 +3,9 @@
 layout: home
 
 hero:
-  name: "Dual Serve"
-  text: ""
-  tagline: "Dual runtime for Node.js"
+  name: 'Dual Serve'
+  text: ''
+  tagline: 'Dual runtime for Node.js'
   actions:
     - theme: brand
       text: What is Dual Serve ?
@@ -19,10 +19,7 @@ hero:
 
 features:
   - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: OSFF Documentation
   - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Dual Serve Documentation
 ---
-
