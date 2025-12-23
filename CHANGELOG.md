@@ -1,3 +1,5 @@
+# [0.2.0](https://github.com/naveenkarmegam/osff-docs/compare/v0.1.7...v0.2.0) (2025-12-23)
+
 ## [0.1.7](https://github.com/naveenkarmegam/osff-docs/compare/v0.1.6...v0.1.7) (2025-12-23)
 
 ### Bug Fixes
