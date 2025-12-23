@@ -1,6 +1,6 @@
 {
   "name": "osff-docs",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Team Grids And Guides",
   "packageManager": "pnpm@9.0.0",
   "devDependencies": {
