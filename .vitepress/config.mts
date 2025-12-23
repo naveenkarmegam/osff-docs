@@ -7,7 +7,7 @@ export default defineConfig({
   titleTemplate: 'Dual Serve Documentation',
   cleanUrls: true,
   description: 'Dual runtime for Node.js',
-  base: '/osff-documentation/',
+  // base: '/osff-documentation/',
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
