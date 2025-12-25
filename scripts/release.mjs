@@ -113,7 +113,6 @@ async function main() {
   step('\nPushing to GitHub...')
   await run('git', ['push', 'origin', `refs/tags/v${targetVersion}`])
   await run('git', ['push'])
-  
 }
 
 function updatePackage(version) {
